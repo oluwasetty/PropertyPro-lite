@@ -1,0 +1,14 @@
+.header{
+    background-color: #f9f9f9;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.floating-label{
+    font-weight: 100;
+}
+
+/* #pix{
+    display: none;
+} */

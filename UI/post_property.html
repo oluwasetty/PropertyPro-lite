@@ -1,0 +1,92 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#343a40">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Post Property | PropertyPro-lite</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/post_property.css" />
+</head>
+
+<body>
+    <section class="page-container">
+        <div class="header">
+            <p>Add Property</p>
+        </div>
+        <div class="box form-container">
+            <form action="#" method="POST" enctype="multipart/form-data">
+
+                <div class="grid-group">
+                    <div class="grid-m-6">
+                        <div class="form-group">
+                            <input required id="price" class="floatinput" type="text" name="price">
+                            <label class="floating-label">Price</label>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-6">
+                        <div class="form-group">
+                            <select required id="state" class="floatinput" name="state">
+                                <option value="" selected disabled hidden>Choose state</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-6">
+                        <div class="form-group">
+                            <select required id="city" class="floatinput" name="city">
+                                <option value="" selected disabled hidden>Choose city</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-6">
+                        <div class="form-group">
+                            <input required id="address" class="floatinput" type="text" name="address">
+                            <label class="floating-label">Address</label>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-12">
+                        <div class="form-group">
+                            <select required id="type" class="floatinput" name="type">
+                                <option value="" selected disabled hidden>Choose type</option>
+                                <option value="1">2 bedroom</option>
+                                <option value="2">3 bedroom</option>
+                                <option value="3">Mini-flat</option>
+                                <option value="4">Others</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-12">
+                        <div class="form-group">
+                            <input type="file" id="pix" name="pix[]" multiple>
+                            <label title="Choose image" for="pix">Choose Image</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div id="preview" class="col-md-6 offset-md-4">
+                            <img id="imgpreview" src="" alt="">
+                        </div>
+                    </div>
+
+                    <div class="grid-m-12">
+                            <div class="form-group">
+                        <input class="ml-4 btn btn-info" type="submit" value="Add">
+                    </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="js/post_property.js"></script>
+</body>
+
+</html>
