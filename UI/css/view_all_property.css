@@ -29,6 +29,7 @@
 .type a{
     text-decoration: none;
     color: #042b31;
+    cursor: pointer;
 }
 
 .add{

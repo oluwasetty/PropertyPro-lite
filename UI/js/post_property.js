@@ -32,20 +32,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
     pix.addEventListener('change', function (event) {
         //Get reference of FileUpload.
-        var fileUpload = event.target.file;
+        var fileUpload = event.target.files[0];
 
         //Check whether the file is valid Image.
         var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.png|.gif)$");
-        if (regex.test(fileUpload.value.toLowerCase())) {
+        if (regex.test(fileUpload.name.toLowerCase())) {
 
             //Check whether HTML5 is supported.
-            if (typeof (fileUpload.files) != "undefined") {
+            if (typeof (fileUpload.type) != "undefined") {
                 // Get Filesize
-                var size = parseFloat(fileUpload.files[0].size / 1024).toFixed(2);
+                var size = parseFloat(fileUpload.size / 1024).toFixed(2);
                 if (size > 1024) {
                     myAlert("Image size too large");
                 } else {
-                    alert('me')
                     document.querySelector('#imgpreview').src = URL.createObjectURL(event.target.files[0]);
                 }
             } else {

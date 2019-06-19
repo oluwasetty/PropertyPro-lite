@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
     let span = document.querySelector(".close");
 
     // When the user clicks on <span> (x), close the modal
-    // span.addEventListener('click', function () {
-    //     modal.style.display = "none";
-    // })
+    span.addEventListener('click', function () {
+        modal.style.display = "none";
+    })
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
@@ -34,6 +34,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
 
     const myAlert = (msg) => {
-        modal.style.display = "block";
+        document.querySelector("#myModal").style.display = "block";
         document.querySelector(".modal-body").textContent = msg;
     }

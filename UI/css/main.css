@@ -1820,8 +1820,9 @@ a.btn {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #1b6f7c;
     color: white;
+    font-size: 14px;
 }
 
 .modal-body {
@@ -1830,7 +1831,7 @@ a.btn {
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #1b6f7c;
     color: white;
 }
 
