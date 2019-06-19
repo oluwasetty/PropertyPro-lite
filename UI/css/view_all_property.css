@@ -1,0 +1,48 @@
+.box .property-container{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+
+.mail::before{
+    content: '\1F4E7';
+}
+
+.phone::before{
+    content: '\260E';
+}
+
+.mail, .phone{
+    text-decoration: none;
+    color: #1b6f7c;
+}
+
+.type{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.add{
+    font-style: italic;
+    font-size: 13px;
+}
+
+.naira::before{
+    content: '\20A6';
+}
+
+.price{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    padding: 5px;
+    background-color: #17a2b8;
+    color: white;
+}
+
+.sold{
+    font-size: 13px;
+}
