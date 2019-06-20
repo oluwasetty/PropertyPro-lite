@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', function (event) {
+    let url = window.location.href;
+    let links = document.getElementsByClassName('link');
+    for (let link of links) {
+        if (url == (link.href)){
+            link.className = 'active';
+        }
+    }
 
     // Get the modal
     let modal = document.querySelector("#myModal");
@@ -28,8 +35,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
     var x = document.querySelector("#myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
+      document.querySelector(".icon i").className.replace(/(?:^|\s)toggle(?!\S)/, '');
     } else {
       x.className = "topnav";
+      document.querySelector(".icon i").className.replace(/(?:^|\s)times(?!\S)/, 'toggle');
     }
   }
 

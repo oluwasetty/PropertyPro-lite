@@ -48,10 +48,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     document.querySelector('#imgpreview').src = URL.createObjectURL(event.target.files[0]);
                 }
             } else {
-                alert("This browser does not support HTML5.");
+                myAlert("This browser does not support HTML5.");
             }
         } else {
-            alert("Please select a valid Image file.");
+            myAlert("Please select a valid Image file.");
         }
     });
 });
